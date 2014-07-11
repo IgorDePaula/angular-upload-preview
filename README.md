@@ -9,4 +9,4 @@ ngUploadPreview
 
 4- In your controller inject the UploadSrv, and in uploadFileToUrl method put $scope.myFile, and url of server for upload.
 
-See 'public_html/index.html' for example.
+See `public_html/index.html` for example.
