@@ -8,9 +8,9 @@
         <script src="js/ngUploadPreview.js"></script>
         <script src="js/app.js"></script>
     </head>
-    <body>
-        <input type='file' file-model='myFile'  canvas-name='can'/>
-        <canvas id='can'></canvas>
-        <input type='button' value='send'></button>
+    <body ng-controller='UploadCtrl'>
+        <input type='file' file-model='myFile'/>
+        <canvas id='canvas'></canvas>
+        <input type='button' ng-click="up()" value='send'/>
     </body>
 </html>

@@ -2,17 +2,13 @@ angular.module('ngUploadPreview', [])
         .directive('fileModel', ['$parse', function($parse) {
                 return {
                     restrict: 'A',
-                    scope: {
-                        canvasName: '='
-                    },
                     link: function(scope, element, attrs) {
                         var model = $parse(attrs.fileModel);
                         var modelSetter = model.assign;
                         element.bind('change', function() {
                             scope.$apply(function() {
                                 modelSetter(scope, element[0].files[0]);
-                                console.log(scope.myFile);
-                                var c = document.getElementById(attrs.canvasName);
+                                var c = document.getElementById('canvas');
                                 var ctx = c.getContext('2d');
                                 ctx.clearRect(0, 0, c.width, c.height);
                                 var img = new Image();

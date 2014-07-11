@@ -1,11 +1,11 @@
 {
-  "name": "angular-upload-preview",
+  "name": "ngUploadPreview",
   "version": "0.0.0",
   "authors": [
     "Igor De Paula <principe.borodin@gmail.com>"
   ],
   "description": "AngularJS Dicrective and Service for upload with preview of images in canvas on html5",
-  "main": "public_html/js/angular-upload-preview.js",
+  "main": "public_html/js/ngUploadPreview.js",
   "keywords": [
     "angular",
     "angularjs",
